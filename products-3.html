@@ -21,10 +21,19 @@
 <body>
 
     <main class="products-page">
-        <div class="products-header">
-            <h1>Nuestros Productos</h1>
-            <div class="filters">
-                <select class="form-select">
+        <div class="products-header d-flex flex-column align-items-end m-0">
+
+            <div class="products-header-top d-flex flex-row justify-content-between">
+                <h1>Nuestros Productos</h1>
+                <a href="index.html" class="back-button products m-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Volver a la Tienda
+                </a>
+            </div>
+            <div class="filters my-3">
+                <select class="form-select p-0">
                     <option>Ordenar por</option>
                     <option>Todo</option>
                     <option>Variedad</option>
@@ -33,7 +42,7 @@
                 </select>
             </div>
         </div>
-    
+
         <div class="products-grid">
             <div class="product-card">
                 <img src="./Products-img/product-1.jpeg" alt="Producto 1">

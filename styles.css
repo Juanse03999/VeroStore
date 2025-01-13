@@ -138,7 +138,6 @@
 @media (min-width: 600px) {
     .navbar-nav {
         height: 60px;
-        width: 100vw;
         display: flex !important;
         justify-content: center;
         flex-direction: row !important;
@@ -256,6 +255,7 @@
 }
 
 .top-main__img { /* Imagen de la presentacion */
+    height: auto;
     width: 100vw;
     filter: brightness(0.3);
 }
@@ -301,10 +301,6 @@
     width: 250px;
 }
 
-/* .carousel-inner {
-    width: 100vw;
-} */
-
 .carousel-item {
     width: 100vw;
     filter: drop-shadow(4px 6px 12px black);
@@ -323,15 +319,15 @@
     margin-bottom: 70px;
 }
 
-/* Media Queries para Tablet yDesktop (768px y superior) */
+/* Media Queries para Tablet y Desktop (768px y superior) */
 @media (min-width: 768px) {
 
     .carousel-control-prev {
-        margin-left: 150px;
+        margin-left: 200px;
     }
     
     .carousel-control-next {
-        margin-right: 150px;
+        margin-right: 200px;
     }
 
 }
@@ -570,8 +566,7 @@ input {
 
 .back-home {
     border: 1px solid black;
-    border-radius: 20px;
-    margin-top: 50PX;
+    border-radius: 10px;
 }
 
 /* PAGE - PRODUCTS */
@@ -583,9 +578,6 @@ input {
 }
 
 .products-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-family: "Playwrite AU SA", serif;
     margin-bottom: 1rem;
 }
@@ -602,9 +594,27 @@ input {
     margin-bottom: 1rem;
 }
 
+.products-header-top {
+    width: 100%;
+}
+
+.products {
+    width: 220px;
+}
+
 .filters {
     width: 200px;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border: 1px solid #000;
+    border-radius: 10px;
 }
+
+.form-select {
+    border: none;
+    cursor: pointer;
+}
+
 
 .products-grid {
     display: grid;
@@ -617,7 +627,6 @@ input {
     background: white;
     border-radius: 8px;
     overflow: hidden;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     border: none;
     transition: transform 0.2s;
 }
@@ -657,10 +666,6 @@ input {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s;
-}
-
-.add-to-cart:hover {
-    background: #1a1a1a;
 }
 
 .add-to-favorites {
@@ -728,13 +733,8 @@ input {
     text-decoration: none;
     padding: 0.5rem 1rem;
     border: 1px solid #000;
-    border-radius: 4px;
+    border-radius: 10px;
     transition: all 0.2s;
-}
-
-.back-button:hover {
-    background: #000;
-    color: white;
 }
 
 .cart-content {
