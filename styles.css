@@ -5,9 +5,6 @@
 }
 
 /* HEADER */
-.header-start {
-    width: 100vw;
-}
 
 /* Carrusel Top Banner */
 .carrusel-top-banner {  /* Contenedor del carrusel */ 
@@ -301,8 +298,11 @@
     width: 250px;
 }
 
+.carousel {
+    width: 100%;
+}
+
 .carousel-item {
-    width: 100vw;
     filter: drop-shadow(4px 6px 12px black);
     transition: 0.4s ease-in-out;
 }
